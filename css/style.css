@@ -1,0 +1,108 @@
+/* Common CSS Start */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+ul{
+    list-style-type: none;
+}
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* Common CSS End */
+
+/* Nav Section Start */
+nav > ul{
+    background-color: purple;
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    position: relative;
+    transition: all 0.5s linear;
+}
+nav ul li a{
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 25px;
+}
+nav ul > li:hover{
+    background-color: black;
+}
+nav ul li ul{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: blueviolet;
+    opacity: 0;
+    visibility: hidden;
+    min-width: 150px;
+    transition: all 0.5s linear;
+}
+nav ul li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+}
+nav ul li ul li ul{
+    left: 100%;
+    top: 0;
+}
+nav ul li ul li ul li ul li ul{
+    min-width: 225px;
+}
+/* Nav Section End */
+
+/* About Section Start */
+#about .row{
+    justify-content: space-between;
+    align-items: center;
+}
+#about .aboutImg{
+    width: 40%;
+}
+#about img{
+    width: 100%;
+}
+#about .aboutContent{
+    width: 60%;
+}
+/* About Section End */
+
+/* Box Shadow Section Start */
+#boxShadow .row{
+    justify-content: space-between;
+}
+.box{
+    width: calc(100% / 3 - 10px);
+    height: 350px;
+    background-color: green;
+    box-shadow: 0px 0px 5px 3px blue;
+}
+/* Box Shadow Section End */
+
+/* Text Shadow Section Start */
+#textShadow .row{
+    justify-content: center;
+}
+#textShadow{
+    margin-top: 50px;
+}
+#textShadow h1{
+    font-size: 35px;
+    text-shadow: 2px 2px 8px red;
+}
+/* Text Shadow Section End */
